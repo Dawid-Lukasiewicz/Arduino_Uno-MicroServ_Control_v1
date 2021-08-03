@@ -2,7 +2,7 @@
 
 Servo Serw;
 String Received = "";
-uint32_t Position = 0, Change = 5, DelayedTimeMs = 0;
+uint32_t Position = 0, Change = 5, DelayedTimeMs = 100;
 void setup()
 {
     pinMode(13, OUTPUT);
@@ -36,6 +36,6 @@ void loop()
         DelayedTimeMs = 0;
         Position = 0;
         Serw.write(Position);
-        delay(100);
+        delay(500);
     }
 }
